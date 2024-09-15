@@ -1,0 +1,1 @@
+# freeCodeCamp-full-stack-license-
