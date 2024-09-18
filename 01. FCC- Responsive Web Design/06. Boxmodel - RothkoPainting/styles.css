@@ -1,0 +1,91 @@
+/* border-radius
+
+Four values - border-radius: 15px 50px 30px 5px; 
+    (first value applies to top-left corner, 
+    second value applies to top-right corner, 
+    third value applies to bottom-right corner, 
+    and fourth value applies to bottom-left corner):
+
+Three values - border-radius: 15px 50px 30px; 
+    (first value applies to top-left corner, 
+    second value applies to top-right and bottom-left corners, 
+    and third value applies to bottom-right corner):
+
+Two values - border-radius: 15px 50px; 
+    (first value applies to top-left and bottom-right corners, 
+    and the second value applies to top-right and bottom-left corners):
+
+One value - border-radius: 15px; 
+    (the value applies to all four corners, which are rounded equally:
+
+*/
+
+
+/* box-sizing: border-box;
+
+If you inspect your .label element with your browser's developer tools, you may notice that it's actually 288 pixels wide instead of 270. This is because, by default, the browser includes the border and padding when determining an element's size.
+
+To solve this, reset the box model by creating a * selector and giving it a box-sizing property of border-box.
+
+  * {
+    box-sizing: border-box;
+  }
+*/
+
+
+/* transform: rotate(angle by deg unit)
+    Defines a 2D rotation, the angle is specified in the parameter
+
+    clockwise rotation -> positive angle
+    counter clockwise rotation -> negative angle
+*/
+
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+    overflow: hidden;
+    filter: blur(2px);
+  }
+  
+  .frame {
+    border: 50px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 20px auto;
+  }
+  
+  .one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    margin: 20px auto;
+    box-shadow: 0 0 3px 3px #efb762;
+    border-radius: 9px;
+    transform: rotate(-0.6deg);
+  }
+  
+  .two {
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 3px 3px #8f0401;
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
+  }
+  
+  .one, .two {
+    filter: blur(1px);
+  }
+  
+  .three {
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+    filter: blur(2px);
+    box-shadow: 0 0 5px 5px #b20403;
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg)
+  }

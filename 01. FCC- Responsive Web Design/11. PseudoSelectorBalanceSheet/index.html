@@ -1,0 +1,97 @@
+<!-- hidden in html
+
+You want this particular element to be hidden from screen readers, so give it the aria-hidden attribute set to true.
+
+        <div id="years" aria-hidden="true" >
+        </div>
+
+-->
+
+<!-- Table
+ Here’s a basic overview of the main tags used to create a table:
+
+    Basic Structure
+        <table>: 
+            Defines the table.
+        <tr>: 
+            Defines a table row.
+        <td>: 
+            Defines a table cell (table data).
+        <th>: 
+            Defines a table header cell.
+        <caption>: 
+            Adds a caption to the table.
+        <thead>: 
+            Groups the header content.
+        <tbody>: 
+            Groups the body content.
+        <tfoot>: 
+            Groups the footer content.
+
+            ! colspan="number of columns" in the footer cell makes it span three columns.
+
+    Example:
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced HTML Table Example</title>
+        </head>
+        <body>
+        <table border="1">
+            <caption>Company Information</caption>
+            <thead>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td colspan="3">End of Table</td>
+            </tr>
+            </tfoot>
+        </table>
+        </body>
+        </html>
+
+
+
+caption element
+    HTML tables use the caption element to describe what the table is about.
+
+    ! The caption element should always be the first child of a table, 
+    but can be positioned with the caption-side CSS property.
+
+
+thead and tbody
+    The thead and tbody elements are used to indicate which portion of your table is the header, and which portion contains the primary data or content.
+
+
+tr
+    table row
+td
+    The td element indicates a data cell
+
+    !?
+        Leave the td element empty. 
+        This element exists only to ensure your table has a four-column layout and associate the headers with the correct columns.
+th
+    header cell
+
+    -->
+

@@ -1,0 +1,338 @@
+<!-- accessibility
+
+    Accessibility refers to the design and creation of products, devices, services, or environments so that they can be used by people with disabilities. 
+    The goal is to ensure that everyone, regardless of their abilities or disabilities, can access and benefit from the same resources and opportunities.
+
+    In the context of web development, accessibility means making websites usable by as many people as possible, including those with visual, auditory, motor, or cognitive impairments3. 
+    This can involve practices such as:
+        Providing text alternatives for images (alt text)
+        Ensuring sufficient color contrast
+        Making all functionality available from a keyboard
+        Designing forms that are easy to navigate and understand
+        Using semantic HTML to improve the structure and meaning of web content
+        Accessibility is not only about compliance with laws and standards but also about creating a more inclusive and equitable digital world
+
+-->
+
+<!--semantic HTML
+
+    Semantic HTML refers to the use of HTML tags that convey the meaning of the content within them, rather than just its appearance. 
+    This approach helps both browsers and developers understand the structure and purpose of the content on a webpage.
+
+    Benefits of Semantic HTML
+        Improved Accessibility: Assistive technologies, like screen readers, can better interpret and navigate the content.
+        Better SEO: Search engines can more accurately index and rank your content.
+        Enhanced Readability: Code is easier to read and maintain for developers.
+
+        Examples of Semantic Elements
+            <header>: Defines a header for a document or section.
+            <nav>: Contains navigation links.
+            <main>: Specifies the main content of a document.
+            <article>: Represents a self-contained piece of content.
+            <section>: Defines a section in a document.
+            <footer>: Defines a footer for a document or section.
+            
+            
+                Example Usage
+            Here’s a simple example of semantic HTML:
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Semantic HTML Example</title>
+            </head>
+            <body>
+            <header>
+                <h1>Welcome to My Website</h1>
+            </header>
+            <nav>
+                <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <main>
+                <article>
+                <h2>About Semantic HTML</h2>
+                <p>Semantic HTML helps improve accessibility, SEO, and readability.</p>
+                </article>
+            </main>
+            <footer>
+                <p>© 2024 My Website</p>
+            </footer>
+            </body>
+            </html>
+
+-->
+
+
+<!-- <nav/> element
+
+    The <nav> element in HTML is used to define a block of navigation links. 
+    This element is intended for major blocks of navigation links, such as menus, tables of contents, and indexes.
+    It helps improve accessibility by allowing screen readers and other assistive technologies to identify and navigate through the main sections of a webpage.
+
+    Here’s a basic example:
+    <nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+
+    In this example, the <nav> element contains an unordered list (<ul>) of links.
+    This structure can be styled with CSS to create a navigation bar, sidebar, or other types of navigation menus.
+
+    It’s important to note that not all links on a webpage need to be inside a <nav> element.
+    The <nav> element is specifically for significant navigation blocks.
+
+-->
+
+<!-- add text only a screen reader can read.
+
+    Append a span element with a class of sr-only to each of the h3 elements.
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+            }
+    </style>
+-->
+
+
+<!-- Selecting only one option from radio fieldset
+
+    Naming
+    when you name radio inputs in the same fieldset to the same name, only one option is selectable
+
+-->
+
+
+<!-- pseudo-element ::before
+
+    The ::before pseudo-element in CSS is used to insert content before the content of a selected element. 
+    It is inline by default.
+
+
+    Example: 
+        selector::before {
+            content: "your content";
+            /* other styles */
+            }
+
+    This pseudo-element is often used to add cosmetic content to an element with the content property. 
+    The content property is required for the ::before pseudo-element to display anything. 
+    If content is not specified or is set to none, the pseudo-element will not be rendered.
+
+
+    The ::before pseudo-element is different from the :before pseudo-class. 
+    
+-->
+
+
+<!-- Pseudo-elements and pseudo-classes
+
+    Pseudo-elements and pseudo-classes in CSS are both used to style elements, but they serve different purposes and have distinct syntaxes.
+
+    Pseudo-Classes
+        Syntax: Single colon (:) followed by the pseudo-class name.
+        Purpose: Target elements based on their state or position in the document.
+
+        Examples:
+            :hover: Styles an element when the user hovers over it.
+            :active: Applies while an element is being activated (e.g., a button being clicked).
+            :visited: Applies to links that have been visited.
+            :link: Applies to links that have not been visited.
+
+            :checked: Applies to input elements that are checked (e.g., checkboxes or radio buttons).
+            :disabled: Applies to elements that are disabled.
+            :enabled: Applies to elements that are enabled.
+            :not(selector): Applies to elements that do not match the selector.
+
+            :first-child: Styles the first child of a parent element.
+            :last-child: Applies to the last child of a parent element.
+            :nth-child(n): Applies to the nth child of a parent element.
+            :nth-of-type(n): Applies to the nth child of a specific type of its parent.
+            :focus: Styles an element when it has focus.
+            
+
+
+
+    
+    Pseudo-Elements
+        Syntax: Double colon (::) followed by the pseudo-element name.
+        Purpose: Style specific parts of an element or insert content before or after the element’s content.
+        
+        Examples:
+            ::before: Inserts content before the content of an element.
+            ::after: Inserts content after the content of an element.
+            ::first-letter: Styles the first letter of an element.
+            ::first-line: Styles the first line of an element.
+            ::selection: Styles the portion of an element that is selected by the user.
+            ::placeholder: Styles the placeholder text of an input element.
+            ::marker: Styles the marker box of a list item.
+
+
+    The double-colon notation (::before) is the modern syntax introduced in CSS3 to distinguish pseudo-elements from pseudo-classes.
+-->
+
+
+<!-- address element
+
+    nested in the footer element to show the contact info of the author of the page
+-->
+
+
+<!-- <br /> or <br>
+
+    adding line inside of the text of an element
+
+-->
+
+<!-- 
+
+-->
+
+<!-- accesskey
+
+    The accesskey attribute accepts a space-separated list of access keys. 
+    
+    For example:
+        <button type="submit" accesskey="s">Submit</button>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Accessibility Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img id="logo" alt="freeCodeCamp" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+      <h1>HTML/CSS Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#student-info" accesskey="i">INFO</a></li>
+          <li><a href="#html-questions" accesskey="h">HTML</a></li>
+          <li><a href="#css-questions" accesskey="c">CSS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form method="post" action="https://freecodecamp.org/practice-project/accessibility-quiz">
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+          <div class="info">
+            <label for="student-name">Name:</label>
+            <input type="text" name="student-name" id="student-name" />
+          </div>
+          <div class="info">
+            <label for="student-email">Email:</label>
+            <input type="email" name="student-email" id="student-email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">Date of Birth:</label>
+            <input type="date" name="birth-date" id="birth-date" />
+          </div>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML</h2>
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3>
+            <fieldset class="question" name="html-question-one">
+              <legend>
+                The legend element represents a caption for the content of its
+                parent fieldset element
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="html-question-two">
+              <legend>
+                A label element nesting an input element is required to have a
+                for attribute with the same value as the input's id
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                    True
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                    False
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="selector">Can the CSS margin property accept negative values?</label>
+            </div>
+            <div class="answer">
+              <select name="selector" id="selector" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="css-textarea">Do you have any questions:</label>
+            </div>
+            <div class="answer">
+              <textarea id="css-textarea" name="css-questions" rows="5" cols="24"></textarea>
+            </div>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+  </body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form Project</title>
+        <mata charset="utf-8" >
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required/></label>
+                <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email" required/></label>
+                <label id="number-label" for="number">Age (optional)<input id="number" type="number" min="10" max="99" placeholder="Age"/></label>
+                <select id="dropdown">
+                    <option value="" disabled selected hidden>Choose one option</option>
+                    <option>Option A</option>
+                    <option>Option B</option>
+                </select>
+                <legend>Would you recommend freeCodeCamp to a friend?
+                    <label for="Definitely_recommend"><input id="Definitely_recommend" type="radio" name="recommend" value="Definitely"/>Definitely</label>
+                    <label for="Maybe_recommend"><input id="Maybe_recommend" type="radio" name="recommend" value="Maybe"/>Maybe</label>
+                    <label for="Not_sure_recommend"><input id="Not_sure_recommend" type="radio" name="recommend" value="Not_sure"/>Not sure</label>
+                </legend>
+                <fieldset>
+                    <legend></legend>
+                    <input type="checkbox" value="0"/>
+                    <input type="checkbox" value="1"/>
+                    <input type="checkbox" value="2"/>
+                    <input type="checkbox" value="3"/>
+                    <input type="checkbox" value="4"/>
+                    <input type="checkbox" value="5"/>
+                </fieldset>
+                <label>Any comments or suggestions?<textarea placeholder="Enter your comments here..."></textarea></label>
+                <input id="submit" type="submit" name="Submit"/>
+            </form>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

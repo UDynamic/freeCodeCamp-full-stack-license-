@@ -1,0 +1,124 @@
+<!-- -->
+
+<!-- vh (as viewport height)
+vh The vh unit stands for viewport height, and is equal to 1% of the height of the viewport. This makes it relative to the viewport height.
+It is time to spruce the project up with some CSS. Begin by giving the body a width of 100%, and a height of 100vh.
+Now, get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0. -->
+
+<!-- body style
+when coloring the body: for the text and other elements in body you just type " color : x"  -->
+
+
+<!-- input type="number" adding min and max
+    <label>Input your age (years): <input type="number" min="13" max="120"/></label>
+
+    ! Background-color is the color of the input box.
+    ! color is the color your inputed text will be shown.
+    -->
+
+<!-- Select and option elements
+
+-->
+
+<!-- textarea Element
+ The textarea element acts like an input element of type text, but comes with the added benefit of being able to receive multi-line text, and an initial number of text rows and columns.
+
+	Example:
+	<textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+-->
+
+<!-- Removing border
+    border: none;
+
+    ! but for margin:
+    margin: 0;
+
+    margin: 25px 50px 75px 100px;
+      top margin is 25px
+      right margin is 50px
+      bottom margin is 75px
+      left margin is 100px
+-->
+
+<!-- Stretch an element to full width
+    width: 100%;
+
+    how to make other inputs such as radio in the same line?
+        Select only the .inline elements, and give them width of unset. 
+        This will remove the earlier rule which set all the input elements to width: 100%.
+        
+-->
+
+<!-- ???
+Add padding of 1px to the .canvas element to give the .one element something solid to push off of.
+  ! Adding 1 pixel of padding to the top, bottom, left, and right of the canvas changed its dimensions to 502 pixels x 602 pixels.
+
+  Replace the padding property with overflow set to hidden - changing the canvas back to its original dimensions.
+    The CSS property overflow: hidden; is used to clip the content that overflows an element's box, making the excess content invisible.
+
+-->
+
+
+<!-- Submission Button
+
+	at the end of the form element:
+		<input type="submit" value="Submit" />
+
+	value in the text on the submit button.
+	could be changed to 'send'
+
+-->
+
+<!-- fieldset legend couple
+
+use the couple together
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Account type (required)</legend>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">freeCodeCamp News</option>
+            <option value="2">freeCodeCamp YouTube Channel</option>
+            <option value="3">freeCodeCamp Forum</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

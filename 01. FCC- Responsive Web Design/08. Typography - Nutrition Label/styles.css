@@ -1,0 +1,128 @@
+/* Create a body selector and give it a font-family set to Open Sans with a fallback of sans-serif.
+    body {
+        font-family : "Open Sans", sans-serif;
+    }
+    
+    'Open Sans': This is the primary font you want to use. 
+    It’s a specific font family.
+        Specific Font Names: 
+        These are the names of actual fonts, like “Open Sans”, “Arial”, or “Times New Roman”. 
+        They are enclosed in quotes if they contain spaces or special characters.
+
+    sans-serif: This is a fallback generic font family. 
+    If “Open Sans” is not available, the browser will use a sans-serif font.
+        These are broad categories of fonts, like serif, sans-serif, monospace, cursive, and fantasy. 
+        They are not enclosed in quotes because they refer to a general style of font rather than a specific font.
+*/
+
+
+/* class name set to "divider large" and the .large selector picks it up ?!
+
+/* indenting the first line of a paraghraph
+
+text-indent: -8px;
+
+*/
+
+* {
+box-sizing: border-box;
+}
+
+html {
+font-size: 16px;
+}
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+.label {
+border: 2px solid black;
+width: 270px;
+margin: 20px auto;
+padding: 0 7px;
+}
+
+header h1 {
+text-align: center;
+margin: -4px 0;
+letter-spacing: 0.15px
+}
+
+p {
+margin: 0;
+display: flex;
+justify-content: space-between;
+}
+
+.divider {
+border-bottom: 1px solid #888989;
+margin: 2px 0;
+}
+
+.bold {
+font-weight: 800;
+}
+
+.large {
+height: 10px;
+}
+
+.large, .medium {
+background-color: black;
+border: 0;
+}
+
+.medium {
+height: 5px;
+}
+
+.small-text {
+font-size: 0.85rem;
+}
+
+
+.calories-info {
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+}
+
+.calories-info h2 {
+margin: 0;
+}
+
+.left-container p {
+margin: -5px -2px;
+font-size: 2em;
+font-weight: 700;
+}
+
+.calories-info span {
+margin: -7px -2px;
+font-size: 2.4em;
+font-weight: 700;
+}
+
+.right {
+justify-content: flex-end;
+}
+
+.indent {
+margin-left: 1em;
+}
+
+.double-indent {
+margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+border-bottom: 1px solid #888989;
+}
+
+.note {
+font-size: 0.6rem;
+margin: 5px 0;
+padding: 0 8px;
+text-indent: -8px;
+}
